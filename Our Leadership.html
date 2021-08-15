@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library. -->
+    <!-- Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+	<title>Our Leadership - ALU</title>
+    <link rel="stylesheet" href="test.css">
+    <!-- jQuery resources -->
+    <link rel="icon" href="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_32,h_32/https://www.alueducation.com/wp-content/uploads/2019/04/cropped-alu_step_device-2-32x32.png" sizes="32x32">
+	<!-- This creates the logo that is usually beside the title of the web tag. -->
+	<script type="text/javascript">
+    // The function ensures that the name of the person is in line with the respective content when one is hovering over the specified name.
+	function openName(evt, Name) {
+	// Declare all variables.
+	var i, tabcontent, tablinks;
+	// Get all elements with class="tabcontent" and hide them.
+	tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+     tabcontent[i].style.display = "none";
+    }
+	// Get all elements with class="tablinks" and remove the class "active".
+	tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+	// Show the current tab, and add an "active" class to the link that opened the tab.
+	document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+   }
+   </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Search.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="top_navbar">
+                <div class="logo">
+                    <img src ="ALU-logo-white-full.png" alt="ALU" width="400" height="80">
+                </div>
+                <!-- The right side of the top navbar -->
+                <div class="rightside">
+                    <ul>
+                        <li><a href="#">Apply</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Work @ ALU</a></li>
+                        <li><a href="#">GIVE TO ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_navbar">
+                <!-- The main menu and drop down menu -->
+                <div class="leftside">
+                    <ul>
+                        <li><a href="#">ABOUT</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Our Approach</a></li>
+                                    <li><a href="#">Learning model</a></li>
+									<li><a href="#">Leadership</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Qm-mpD9-ZyQtTud0rbCnrW6pVa9cuFbS/view">The ALU impact report 2020</a></li>
+									<li><a href="#">Our founding academic partners</a></li>
+                                    <li><a href="#">Authors</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">THE ALU ADVANTAGE</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">The 6 ALU advantages</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">ACADEMICS</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Computing</a></li>
+									<li><a href="#">Advice to Prospective Students</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">LIFE AT ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   <div class="w3-sidebar-right" style="display:none" id="mySidebar">
+	<div class="search-box" id="search_box">
+      <input type="text" placeholder=""/>
+	  <input type="button" value="Search" onclick="Search()"/>
+	  <div id="button1">
+	   <button onclick="w3_close()" class="w3-bar-item w3-large">Close</button>
+      </div>
+	</div>
+   </div>
+   <button class="w3-button" onclick="w3_open()">☰</button>
+  </div>
+  <div class="container24">
+    <h1>OUR LEADERSHIP</h1>
+	<p>(Hover over one of the names).<p>
+  </div>
+  <div class="container25">
+      <!-- It creates the names, just below the heading with white background, the links. -->
+	  <!-- Reference: https://www.w3schools.com/howto/howto_js_hover_tabs.asp. -->
+   <div class="tab">
+    <button class="tablinks" id="link1" onmouseover="openName(event, 'Graca-Machel')">Graça Machel</button>
+    <button class="tablinks" id="link2" onmouseover="openName(event, 'Geoffrey-Rugege')">Geoffrey Rugege</button>
+    <button class="tablinks" id="link3" onmouseover="openName(event, 'Donald-Kaberuka')">Donald Kaberuka</button>
+	<button class="tablinks" id="link4" onmouseover="openName(event, 'Fred-Swaniker')">Fred Swaniker</button>
+   </div>
+    <div id="Graca-Machel" class="tabcontent">
+     <h2>Our Chancellor</h2>
+	 <img src ="Graca-Machel.jpg" alt="Graca-Machel">
+	 <p>Graça Machel, an accomplished Mozambican politician, international advocate for women and children’s rights serves as the Chancellor of ALU. Machel was the Minister of Education in Mozambique and led a movement to cut the illiteracy rate by 22 percent, and to increase the school-going population from 400,000 to 1.6 million.</p>
+	 <p>Machel was awarded the InterAction Humanitarian award in 1997 and was made an honorary Dame Commander of the Order of the British Empire at the request of British Prime Minister Gordon Brown in 2007.</p>
+	 <p>She has also founded various organisations that work to ensure the rights of families and communities across Africa. These include the Graça Machel Trust, an organisation which protects women and children’s rights and promotes women’s leadership across Africa. The Trust also runs the Graça Machel Scholarships for Women. She is a Founding Member of the Elders, an independent group of global leaders who work together for peace and human rights. Machel is the Founder of the Foundation of Community Development in Mozambique. She is also involved, in various capacities, in other organisations, including: the Africa Progress Panel and the UN Millennium Development Goals Advocates Panel. She is an Eminent Person of the UN Foundation. Machel served as the First Lady of South Africa during Nelson Mandela’s Presidency and as First Lady of Mozambique during Samora Machel’s presidency.</p>
+     <p>ALU is privileged and honoured to have Graça Machel as our chancellor. We are confident that her experience in education will be of tremendous value in strengthening ALU’s governance and helping us achieve our goal to develop the future leaders of Africa.</p>
+    </div>
+    <div id="Geoffrey-Rugege" class="tabcontent">
+     <h2>Our Vice-Chancellor</h2>
+	 <img src ="Geoffrey-Rugege.jpg" alt="Geoffrey-Rugege">
+	 <p>Dr. Rugege is an esteemed higher education leader and a renowned linguistics expert who has played a pivotal role in the lexicographical development of the Kinyarwanda language. He is the former Executive Director of the National Council for Higher Education Higher Education Council in Rwanda and is a prominent consultant in Higher Education within East, Central and Southern Africa.</p>
+	 <p>Born in Uganda, Dr. Rugege was a professor of English and linguistics at Grambling State University (Grambling, Louisiana) and Fayetteville State University (Fayetteville, North Carolina) for 28 years before retiring as a teacher. He holds a Bachelor’s degree in English from Makerere University, Kampala, Uganda and an M.A. and PhD in linguistics from the University of Illinois, Urbana-Champaign.</p>
+	 <p>Dr. Rugege has edited two anthologies of African-American literature: The Black Orpheus published by Simon & Schuster (1996) and Introduction to Literature: Drama, Poetry and Prose by Thomson Publishers (2002) and his lexicology work has led to the publishing of the Kinyarwanda-English Dictionary (2010 Fountain Publishers, Kampala) and significant contributions to the Kamusi Project, Yale University’s online interactive dictionary of African languages.</p>
+     <p>In addition to serving as ALU’s vice-chancellor, Dr. Rugege is also a board member of Governors of the University Rwanda, Chancellor of the Kigali Institute of Management, and a member of the Rwanda Academy of Language and Culture.</p>
+    </div>
+    <div id="Donald-Kaberuka" class="tabcontent">
+     <h2>Chairman of our Global Advisory Council</h2>
+	 <img src ="Donald-Kaberuka.jpg" alt="Donald-Kaberuka">
+	 <p>Kaberuka is a Rwandan economist and was the president of the African Development Bank from September 2005 until September 2015. He studied at the University of Dar es Salaam as an undergraduate and obtained his MPhil in Development Studies from University of East Anglia in 1979. He received his PhD in economics from the University of Glasgow. Prior to serving as President of the African Development Bank, Kaberuka served as Minister of Finance and Economic Planning in Rwanda for 8 years. He is credited with helping to stabilize the Rwandan economy from the effects of the 1994 genocide.</p>
+	 <p>Since stepping down as President of the African Development Bank, Donald Kaberuka has been appointed to the board of trustees of the Rockefeller Foundation and as Senior Advisor to “TPG/Satya”, a consortium jointly owned  by two private equity firms:<br/><br/> (a) US-based TPG<br/>(b) London-based Satya Capital, affiliated with Sudanese billionaire, Mo Ibrahim.</p>
+    </div>
+    <div id="Fred-Swaniker" class="tabcontent">
+     <h2>Our Founder</h2>
+	 <img src ="Fred-Swaniker.jpg" alt="Fred-Swaniker">
+	 <p>Fred was recognized by US President Obama in 2010 and again in 2013 for his work in developing Africa’s future leaders. He has been recognised as a Young Global Leader by the World Economic Forum, by Forbes Magazine as one of the top ten young ‘power men’ in Africa, and by Echoing Green as one of the fifteen ‘best emerging social entrepreneurs in the world’. He is a Fellow of the Aspen Institute’s Global Leadership Network and was a TED Fellow in 2009. Fred began his professional career as a consultant with McKinsey and Company and has an MBA from Stanford Business School, where he was named an Arjay Miller Scholar, a distinction awarded to the top 10% of each graduating class at the business school. He was born in Ghana but has lived and worked in about 10 different African countries.</p>
+	 <p>Fred is deeply passionate about Africa and believes that the missing ingredient on the continent is good leadership. In line with this, Fred founded the African Leadership ‘Group’—an ecosystem of organizations that includes African Leadership Academy, African Leadership Network, Africa Advisory Group, and of course, ALU. Collectively, these institutions aim to transform Africa by identifying, developing, and connecting three million game-changing leaders for Africa by 2060.</p>
+    </div>
+  </div>
+  <div id="footer15">
+   <div id="footer15A">
+    <h3><u>ABOUT ALU</u></h3>
+	<p>ALU aims to develop 3 million ethical and entrepreneurial leaders for Africa and the world by 2035. It uses a personalized, student-driven, project-based, and mission-oriented approach to create agile, lifelong learners who can adapt to a changing world. ALU's first site was inaugurated in September 2015 in Mauritius. Its second campus was inaugurated in September 2017 in Kigali Heights, Rwanda.</p>
+   </div>
+   <div id="footer15B">
+	 <u>HELPFUL LINKS</u><br/><br/>
+	 <!-- The <u>...</u> tags are used to make the text underlined. (Reference: https://www.w3schools.com/tags/tag_u.asp) -->
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/index.html">Home</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/About.html">About us</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/ALU%20Advantage.html">ALU Advantage</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/UndergraduateExperience.html">Academics</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/Student%20life.html">Life at ALU</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/apply_page.html">Apply</a>
+   </div>
+   <div id="footer15C">
+    <u>CONTACT US</u><br/><br/>
+	African Leadership Campus,<br/><br/>
+    Powder Mill Rd,<br/><br/>
+    Pamplemousses, 21001<br/><br/>
+    Mauritius<br/><br/>
+	marketing@alueducation.com<br/><br/>
+	Front desk: +230 54 43 49 51
+   </div>
+  </div>
+  <div id="footer16">
+   <br/>
+   <div id="rights">
+    © 2021 ALU. All Rights Reserved.
+	<!--The 'a' attributes create the social media icons with links to their respective social media. -->
+	<a href="https://facebook.com/alu.education" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/alueducation" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/alueducation/" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w" class="fa fa-youtube"></a>
+	<a href="https://www.linkedin.com/school/alueducation/" class="fa fa-linkedin"></a>
+   </div>
+  </div>
+ </body>
+</html>

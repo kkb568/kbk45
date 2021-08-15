@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library. -->
+    <!-- Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+	<title>ALU Advantage - ALU</title>
+    <link rel="stylesheet" href="test.css">
+    <!-- jQuery resources -->
+    <link rel="icon" href="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_32,h_32/https://www.alueducation.com/wp-content/uploads/2019/04/cropped-alu_step_device-2-32x32.png" sizes="32x32">
+	<!-- This creates the logo that is usually beside the title of the web tag. -->
+	<script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) 
+	{
+      showSlides(slideIndex += n);
+    }
+	function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slider");
+	  if (n > slides.length) {slideIndex = 1;}
+	  if (n < 1) {slideIndex = slides.length;}
+	  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+      }
+	slides[slideIndex-1].style.display = "block";
+	}
+    </script>
+    <!-- In the function, slideIndex is the current slide. 'n' is the number of steps when clicking on the arrows. -->
+    <!-- Using the next arrow increases 'n' by one. Using the previous arrow decreases 'n' by one. -->
+    <!-- Since slides.length=5, if 'n' is higher than five, the current slide is the first slide, that is, when you press the next arrow while at the last slide, you return to the first slide. -->
+    <!-- If 'n' is less than one, the current slide is the last slide, that is, if you press the previous arrow while at the first slide, you return to the last slide. -->
+    <!-- The last code (slides[slideIndex-1].style.display = "block";) and the for loop ensures that only the slide you are seeing is the only slide appearing on the website. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Search.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="top_navbar">
+                <div class="logo">
+                    <img src ="ALU-logo-white-full.png" alt="ALU" width="400" height="80">
+                </div>
+                <!-- The right side of the top navbar -->
+                <div class="rightside">
+                    <ul>
+                        <li><a href="#">Apply</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Work @ ALU</a></li>
+                        <li><a href="#">GIVE TO ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_navbar">
+                <!-- The main menu and drop down menu -->
+                <div class="leftside">
+                    <ul>
+                        <li><a href="#">ABOUT</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Our Approach</a></li>
+                                    <li><a href="#">Learning model</a></li>
+									<li><a href="#">Leadership</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Qm-mpD9-ZyQtTud0rbCnrW6pVa9cuFbS/view">The ALU impact report 2020</a></li>
+									<li><a href="#">Our founding academic partners</a></li>
+                                    <li><a href="#">Authors</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">THE ALU ADVANTAGE</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">The 6 ALU advantages</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">ACADEMICS</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Computing</a></li>
+									<li><a href="#">Advice to Prospective Students</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">LIFE AT ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   <div class="w3-sidebar-right" style="display:none" id="mySidebar">
+	<div class="search-box" id="search_box">
+      <input type="text" placeholder=""/>
+	  <input type="button" value="Search" onclick="Search()"/>
+	  <div id="button1">
+	   <button onclick="w3_close()" class="w3-bar-item w3-large">Close</button>
+      </div>
+	</div>
+   </div>
+   <button class="w3-button" onclick="w3_open()">☰</button>
+  </div>
+  <div class="container6">
+    <h1>THE ALU ADVANTAGE</h1>
+	<p>WHERE ENTREPRENEURIAL LEADERS ARE DEVELOPED<p>
+  </div>
+  <div class="container7">
+   <p>At ALU, students benefit from an individualized, mission-driven method that’s just as effective and impactful as traditional ones. You can interview experts. Conduct field studies. Shadow professionals. Watch TED talks. And so much more, based on your individual goals.</p>
+   <div id="Entrepreneurs">
+    <img src ="Entrepreneurs.jpg" alt="Entrepreneurs" width="430" height="300">
+   </div>
+  </div>
+  <div id="special">
+   <h2>THE ALU ADVANTAGE</h2>
+  </div>
+  <div class="container8">
+   <div id="ALU-advantage">
+    <img src ="ALU-advantage.png" alt="ALU-advantage" width="500" height="500">
+   </div>
+  </div>
+  <div class="container9">
+    <p>Conventional classes are just one way to do it. At ALU, you’ll take a different approach. An individualized, student-focused leadership curriculum develops and tests your skills, your intellect, and your ideas. A heavy emphasis on real-world internships and experience solidifies crucial qualities for the future. You’ll be exposed to new global cultures, opinions, and challenges to your problem-solving abilities. And you’ll gain the skills that 21st-century employers want—critical skills like problem-solving, entrepreneurship, and leadership. At ALU, you don’t just pick a major—you pursue life experience.</p>
+    <p>Click on the button below for more information on each of the advantages:-</p>
+    <div id="bt">
+	 <!-- This creates the button below with the title "Learn More". -->
+	 <a class="btn" href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/The%206%20ALU%20advantages.html">Learn More</a>
+    </div>
+  </div>
+  <div class="container10">
+   <div id="intro">
+    <h2>THE ALU DIFFERENCE</h2>
+    <p>ALU differs from traditional universities in the following ways :-</p>
+   </div>
+   <div class="slider-show">
+   <!-- Reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+   <!-- The slider-show div class is the overall area of the slideshow. The slider-text div class is for each individual slide. -->
+   <!-- The slider div class is used in the javascript function to get the slide that the user is going towards. -->
+    <div class="slider">
+     <div class="slider-text1">
+	  <br/>
+	  <div id="img1">
+	   <img src ="Uncertain-world.png" alt="Uncertain-world" width="650" height="400">
+	  </div>
+	  <div id="info">
+	   <h3>5. PREPARATION FOR AN UNCERTAIN WORLD</h3>
+	   <p>The world is rapidly changing. Huge advances in artificial intelligence, nanotechnology, robotics, digital biology, and 3D manufacturing are altering the world in unanticipated ways. Traditional university graduates are rarely exposed to this information, let alone given the skills to thrive in volatile, complex, and uncertain environments. ALU graduates develop a high-level understanding of these technologies and their implications, and they practice operating in a world that is full of ambiguity, complexity, and uncertainty.</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="slider">
+	 <div class="slider-text2">
+	  <br/>
+	  <div id="img2">
+	   <img src ="open.jpg" alt="open" width="650" height="400">
+	  </div>
+	  <div id="info">
+	   <h3>1. ALIGNMENT WITH PASSION</h3>
+	   <p>Traditional universities rarely engage students in deep self-inquiry and self-discovery. At ALU, students have recurring opportunities to assess themselves and receive feedback from others. They have the opportunity to learn more about who they are, their strengths and weaknesses, and their passions and interests. They gain significant exposure to the greatest challenges in our world and the passionate leaders and mentors who are working on them. This repeated exposure allows students to become inspired by what is possible and learn which problems they are uniquely passionate about solving.</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="slider">
+	 <div class="slider-text3">
+	  <br/>
+	  <div id="img3">
+	   <img src ="knowledge.png" alt="knowledge" width="650" height="400">
+	  </div>
+	  <div id="info">
+	   <h3>2. FOUNDATIONAL KNOWLEDGE & POST-UNIVERSITY PREPAREDNESS</h3>
+	   <p>Many of today’s universities are structured as “knowledge enterprises” rather than “skills enterprises.” As such, many do not focus on equipping students with the actual skills that employers seek. Recent studies indicate that 90% of employers believe that traditional university graduates are unprepared for the workplace. ALU students are prepared with the skills that are attractive to a wide range of potential employers. They are prepared to become innovators and entrepreneurs and to apply their unique perspectives and abilities to government, corporate, NGO, and nonprofit sectors.</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="slider">
+	 <div class="slider-text4">
+	  <br/>
+	  <div id="img4">
+	   <img src ="mission.png" alt="mission" width="650" height="400">
+	  </div>
+	  <div id="info">
+	   <h3>3. MISSIONS NOT MAJORS</h3>
+	   <p>At traditional universities, students declare a major in a single academic discipline. Not so at ALU: rather, students declare a “mission” related to problems they want to solve. Instead of dedicating themselves to memorizing a specific body of facts and figures, ALU students dedicate themselves to solving real problems in the real world and acquire the skills and methods they need to solve them. They drive their own personalized educational journeys under the guidance of mentors and curate their learning experiences around the problems they want to solve.</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="slider">
+	 <div class="slider-text5">
+	  <br/>
+	  <div id="img5"> 
+	   <img src ="rationale.png" alt="rationale" width="650" height="400">
+	  </div>
+	  <div id="info">
+	   <h3>4. INSTITUTIONAL RATIONALE</h3>
+	   <p>The goal of traditional universities is to transfer knowledge to the next generation. ALU exists to create leaders: catalysts for change who will navigate a rapidly-evolving world. ALU graduates understand complex systems and are not boxed in by traditional disciplinary lines. ALU exists to develop leaders. Education is simply the means through which these leaders are developed—it is not the end in and of itself.</p>
+	  </div>
+	 </div>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<!-- The two <a>...</a> tags are used to create the previous and the next arrows which are beside the slideshow. -->
+   </div>
+  </div>
+  <div id="footer3">
+   <div id="footer3A">
+    <h3><u>ABOUT ALU</u></h3>
+	<p>ALU aims to develop 3 million ethical and entrepreneurial leaders for Africa and the world by 2035. It uses a personalized, student-driven, project-based, and mission-oriented approach to create agile, lifelong learners who can adapt to a changing world. ALU's first site was inaugurated in September 2015 in Mauritius. Its second campus was inaugurated in September 2017 in Kigali Heights, Rwanda.</p>
+   </div>
+   <div id="footer3B">
+	 <u>HELPFUL LINKS</u><br/><br/>
+	 <!-- The <u>...</u> tags are used to make the text underlined. (Reference: https://www.w3schools.com/tags/tag_u.asp) -->
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/index.html">Home</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/About.html">About us</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/ALU%20Advantage.html">ALU Advantage</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/UndergraduateExperience.html">Academics</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/Student%20life.html">Life at ALU</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/apply_page.html">Apply</a>
+   </div>
+   <div id="footer3C">
+    <u>CONTACT US</u><br/><br/>
+	African Leadership Campus,<br/><br/>
+    Powder Mill Rd,<br/><br/>
+    Pamplemousses, 21001<br/><br/>
+    Mauritius<br/><br/>
+	marketing@alueducation.com<br/><br/>
+	Front desk: +230 54 43 49 51
+   </div>
+  </div>
+  <div id="footer4">
+   <br/>
+   <div id="rights">
+    © 2021 ALU. All Rights Reserved.
+	<!--The 'a' attributes create the social media icons with links to their respective social media. -->
+	<a href="https://facebook.com/alu.education" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/alueducation" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/alueducation/" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w" class="fa fa-youtube"></a>
+	<a href="https://www.linkedin.com/school/alueducation/" class="fa fa-linkedin"></a>
+   </div>
+  </div>  
+ </body>
+</html>

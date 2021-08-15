@@ -1,0 +1,638 @@
+/* color palette
+CSS
+--jet: #2a2b2eff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff;
+--persian-red: #d1302eff;
+--royal-blue-dark: #012e6dff; */
+
+/* -----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Global Styles*/
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height:100%;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+/* -----------------------------------------------------------------------------------------------
+Header*/
+
+
+/* -----------------------------------------------------------------------------------------------
+Footer*/
+
+
+
+/* -----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Home Page*/
+
+/* -----------------------------------------------------------------------------------------------
+landing Page*/
+
+/* .wrapper{
+  width: 100%;
+  height: 60%;
+  postion: absolute;
+  background-color: red;
+} */
+
+.landing-page{
+  max-width: 100%;
+  width: 2000px;
+  height: 30%;
+  background-color: white;
+  overflow: hidden;
+  padding: 60px 10px ;
+/*   position: absolute; */
+  margin: 0;
+}
+
+.main {
+position: absolute;
+top: 400px;
+left: 0px;
+width: 100%;
+height: 2700px;
+background-color: #D3D3D3;
+}
+
+.center{
+  text-align: center;
+}
+
+.main-header{
+  font-size: 2rem;
+  color: #012e6dff;
+}
+
+.other-header{
+  color: #012e6dff;
+}
+
+.head-subtitle{
+  font-size: 1.8rem;
+}
+
+.student-programs{
+display: flex;
+justify-content: center;
+}
+
+.student-prog-boxes{
+  width: 40%;
+  margin: 50px 20px 50px 80px;
+  display: inline-block;
+
+}
+
+.student-prog-boxes {
+  font-size: 0.7rem;
+}
+
+.student-prog-boxes h2{
+  font-size: 1.8rem;
+}
+
+.link-boxes{
+  margin-top: 80px;
+}
+
+.link-box-size{
+  display: inline-block;
+  width: 45%;
+  height: 145px;
+  margin: 5px;
+  padding: 0;
+  border: solid black 1px;
+  background-color: rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+}
+
+.big-img-frame{
+  width: 45%;
+  height: 500px;
+  border: solid black 1px;
+  margin: 50px 80px 50px 20px;
+  align-items: right;
+  padding: 0;
+  background-image: url("Images/student_life1.jpeg");
+}
+
+iframe{
+  margin: 50px 80px;
+  width: 88%;
+  height: 500px;
+}
+
+#overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  color: white;
+  transform: translate(-50%,-50%);
+  /* -ms-transform: translate(-50%,-50%); */
+}
+
+.box-1
+{
+  background-image: url("Images/culture_program.jpeg");
+  background-size: cover;
+
+}
+
+.box-2
+{
+  background-image: url("Images/volunteer_program.jpeg");
+  background-size: cover;
+}
+
+.box-3
+{
+  background-image: url("Images/mentorship_program.jpeg");
+  background-size: cover;
+}
+
+.box-4
+{
+  background-image: url("Images/training_program.jpeg");
+  background-size: cover;
+}
+
+.link-box-size:hover{
+
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 10px;
+}
+
+.hidden_text{
+ font-size: 1.1rem;
+ width: 70%;
+ /* display: none; */
+}
+
+
+.learn_more{
+  text-decoration: underline;
+  color: cyan;
+  cursor: pointer;
+}
+
+.mini_overlayy {
+  position:
+  width: 100%;
+  height: 100%;
+  top: 0%;
+margin: 0;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.mini_box_text{
+  position: relative;
+  top: 65%;
+  left: 10%;
+  font-size: 1.2rem;
+  color: white;
+  /* transform: translate(-50%,-50%); */
+  /* -ms-transform: translate(-50%,-50%); */
+}
+
+.meet_the_team{
+  margin: 30px 1.5%;
+  box-sizing: border-box;
+
+
+}
+
+.meet_the_team img{
+  width: 30%;
+  height: 400px;
+
+
+}
+
+hr{
+  margin: 15px;
+}
+
+.team_rwanda{
+  margin: auto;
+  display: inline-block;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+.team_mur{
+  margin: auto;
+  display: inline-block;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+.team_member{
+  /* float: left; */
+  margin: 45px;
+  display: inline-block;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 370px;
+  min-width: 185PX;
+  width: 407px;
+  min-height: 204px;
+  perspective: 1000px;
+  margin: auto;
+  border: 1px solid grey;
+}
+
+
+
+/* setting up the animation and postion relative to the parent element */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+
+}
+
+/* when a mouse is hovered the ard will rotate on the x-axis (vertically) */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* properties for the back and fornt of the card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back p{
+font-size: 1.1rem;
+}
+
+.flip-card-front {
+  color: white;
+  font-size: 1.4rem;
+}
+
+
+/* provides a nice transparency black overlay allowing us to see text clearly */
+.color-overlay{
+    background-color: #020300cc ;
+width: 100%;
+height: 20%;
+display: flex ;
+/* justify-content: */
+position: relative;
+bottom: 0px;
+left: 0px;
+right: 0px;
+vertical-align: bottom;
+
+}
+
+.color-overlay h2{
+  vertical-align: bottom;
+}
+
+#kr{
+  background-image: url('Images/ALU-Student-Life-Kevin.jpeg');
+}
+
+#in{
+  background-image: url('Images/IsaacN.jpeg');
+}
+
+#ta{
+  background-image: url('Images/ALU-Student-Life-Tasha.jpeg');
+}
+
+#oo{
+  background-image: url('Images/ALU-Student-Life-Osaretin.jpeg');
+}
+
+#jd{
+  background-image: url('Images/ALU-Student-Life-Joshila.jpeg');
+}
+
+#ab{
+  background-image: url('Images/ALU-Student-Life-Amayo.jpeg');
+}
+
+
+
+
+
+.img-bg :hover{
+  display: none;
+}
+
+.flip-card-back {
+  background-color: #020300;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* for padding around the letters on the other side of the flip card */
+.space{
+	width: 80%;
+}
+
+.header .wrapper a {
+color: white;
+text-decoration: none;
+}
+
+.header .wrapper {
+  background-color: #002e6d;  
+}
+
+.header .wrapper .top_navbar {
+  width: 100%;
+  height: 60px;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bolder;
+  /* Right and left padding is 50px */
+  padding: 10px 50px;
+  
+
+  /* expands flex-items to fill the available space */
+  display: flex;
+  /* provides the space btw items */
+  justify-content: space-between;
+  /* center all items in the  div element */
+  align-items: center;
+}
+
+.header .wrapper .top_navbar .logo img {
+  float: left;
+  margin-left: 20px;
+  margin-top: 45px;
+}
+
+.header .wrapper .top_navbar .rightside ul {
+  display: flex;
+}
+.header .wrapper .top_navbar .rightside ul li {
+  margin: 0 50px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.4s;
+  color: white;
+}
+
+.header .wrapper .top_navbar .rightside ul li:hover {
+  border-bottom: 1px solid #d00d2d;
+}
+
+.header .wrapper .top_navbar .rightside ul li:last-child {
+  background-color: #d00d2d;
+  margin-right: 100px;
+  border: 1px #ffffff solid;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 0.7em;
+}
+
+.header .wrapper .top_navbar .rightside ul li a {
+  display: block;
+  padding: 4px 8px;
+}
+
+.header .wrapper .top_navbar .rightside ul li a:hover:last-child {
+  color: #eb3956;
+}
+
+.header .wrapper .bottom_navbar .leftside {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 600px;
+  font-size: 0.9em;
+  font-weight: bolder;
+}
+.header .wrapper .bottom_navbar .leftside ul {
+  display: flex;
+  padding-right: 800px;
+  justify-content: space-between;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li {
+  color: white;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover {
+  border-bottom: 1px solid #d00d2d;
+  color: #d00d2d;
+}
+
+/* The sub menus */
+.header .wrapper .bottom_navbar .leftside .sub_menu {
+  display: none;
+  z-index: 1;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu {
+  position: absolute;
+  display: inline-block;
+  background-color: #002e6d;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul {
+  display: block;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li a {
+  display: block;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li {
+  border-bottom: 1px solid #ffffff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px;
+  text-align: left;
+}
+
+.header
+  .wrapper
+  .bottom_navbar
+  .leftside
+  ul
+  li:hover
+  .sub_menu
+  ul
+  li:last-child {
+  border-bottom: none;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li a:hover {
+  color: #d00d2d;
+}
+
+/*The z-index, with value of 1, ensures that the search-box is in formt of the video. Reerence: https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+/*The line-height property shows the distance between the text and button input, and the top part of the search-box.*/
+.search-box{
+background: #D3D3D3;
+position: absolute;
+top: 135px;
+left: 1200px;
+width: 350px;
+height: 110px;
+line-height: 60px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+border-top:4px solid #D80B15;
+z-index: 1;
+}
+
+.search-box input[type="text"]{
+width: 200px;
+padding: 5px 10px;
+margin-left: 23px;
+border: 1px solid #D80B15;
+outline: none;
+}
+
+.search-box input[type="button"]{
+width: 80px;
+padding: 5px 0;
+background: #002e6d;
+color: #fff;
+border: 1px solid #002e6d;
+outline: none;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.w3-button {
+position: absolute;
+top: 80px;
+left: 1500px;
+background: white;
+border: 3px solid white;
+padding: 4px 8.5px;
+outline: none;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.w3-button:hover, .search-box input[type="button"]:hover{
+background-color: red;
+color: white;
+border-color: red;
+}
+
+#button1{
+position: absolute;
+top: 50px;
+left: 280px;
+}
+
+#footer1 {
+position: absolute;
+top: 3085px;
+left: 0px;
+height: 375px;
+width: 1600px;
+background-color: white;
+}
+
+#footer2 {
+position: absolute;
+left: 0px;
+top: 3460px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+#footer1A {
+margin-left: 50px;
+margin-right: 900px;
+margin-top: 50px;
+}
+
+#footer1A p {
+font-size: 17px;
+}
+
+#footer1B {
+position: relative;
+bottom: 155px;
+margin-left: 800px;
+font-weight: bold;
+}
+
+#footer1B a {
+color: black;
+text-decoration: none;
+}
+
+#footer1C {
+position: relative;
+bottom: 390px;
+margin-left: 1050px;
+font-weight: bold;
+}
+
+#rights {
+margin-left: 50px;
+}
+
+#rights a {
+font-size: 20px;
+}
+
+.fa {
+position: relative;
+left: 900px;
+color: white;
+text-decoration: none;
+width: 50px;
+}
+
+.fa:hover {
+color: red;
+}

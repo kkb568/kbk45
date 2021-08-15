@@ -1,0 +1,1304 @@
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+font-family: "Roboto", sans-serif;
+text-decoration: none;
+background-color: #D3D3D3;
+overflow-x: hidden;
+}
+
+.container1 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 350px;
+width: 1600px;
+}
+
+.container1 video {
+min-height: 100%;
+min-width: 100%;
+}
+
+.container1 p {
+margin-left: 130px;
+font-weight: bold;
+font-size: 25px;
+}
+
+h1 {
+margin-left: 200px;
+font-size: 50px;
+color: #002e6d;
+}
+
+h2 {
+font-size: 35px;
+font-weight: 800;
+}
+
+p {
+font-size: 20px;	
+}
+
+#footer1A p {
+font-size: 17px;	
+}
+
+.container2 {
+position: absolute;
+top: 1020px;
+left: 0px;
+height: 350px;
+width: 1600px;
+background-color: white;
+}
+
+.container2 h2 {
+margin-left: 700px;
+margin-top: 35px;
+color: #002e6d;
+}
+
+.container2 p, .container3 p {
+margin-left: 70px;
+margin-right: 60px;
+}
+
+.container3 {
+position: absolute;
+top: 1350px;
+left: 0px;
+height: 350px;
+width: 1600px;
+background-image: url("top-view-campus.jpg");
+color: white;
+}
+
+.container3 h2 {
+margin-left: 350px;
+margin-top: 40px;
+}
+
+.container4 {
+position: absolute;
+top: 1700px;
+left: 0px;
+height: 550px;
+width: 1600px;
+background-color: white;
+}
+
+.container4 h2 {
+margin-left: 650px;
+margin-top: 40px;
+color: #002e6d;
+}
+
+.container4 iframe {
+margin-left: 100px;
+margin-top: 50px;
+border: none;
+}
+
+.container5 {
+position: absolute;
+top: 2250px;
+left: 0px;
+height: 400px;
+width: 1600px;
+background-image: url("top-view-campus.jpg");
+color: white;
+}
+
+.container5 h2 {
+margin-left: 50px;
+}
+
+#header {
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100px;
+width: 1600px;
+background-color: #002e6d;
+color: white;
+}
+
+#header a {
+color: white;
+text-decoration: none;
+}
+
+#header a:hover {
+color: red;
+}
+
+/*The z-index, with value of 1, ensures that the search-box is in formt of the video. Reerence: https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+/*The line-height property shows the distance between the text and button input, and the top part of the search-box.*/
+.search-box{
+background: #D3D3D3;
+position: absolute;
+top: 135px;
+left: 1200px;
+width: 350px;
+height: 110px;
+line-height: 60px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+border-top:4px solid #D80B15;
+z-index: 1;
+}
+
+.search-box input[type="text"]{
+width: 200px;
+padding: 5px 10px;
+margin-left: 23px;
+border: 1px solid #D80B15;
+outline: none;
+}
+
+.search-box input[type="button"]{
+width: 80px;
+padding: 5px 0;
+background: #002e6d;
+color: #fff;
+border: 1px solid #002e6d;
+outline: none;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.w3-button {
+position: absolute;
+top: 80px;
+left: 1500px;
+background: white;
+border: 3px solid white;
+padding: 4px 8.5px;
+outline: none;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.w3-button:hover, .search-box input[type="button"]:hover{
+background-color: red;
+color: white;
+border-color: red;
+}
+
+#button1{
+position: absolute;
+top: 50px;
+left: 280px;
+}
+
+.header .wrapper a {
+color: white;
+text-decoration: none;
+}
+
+.header .wrapper {
+  background-color: #002e6d;  
+}
+
+.header .wrapper .top_navbar {
+  width: 100%;
+  height: 60px;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bolder;
+  /* Right and left padding is 50px */
+  padding: 10px 50px;
+  
+
+  /* expands flex-items to fill the available space */
+  display: flex;
+  /* provides the space btw items */
+  justify-content: space-between;
+  /* center all items in the  div element */
+  align-items: center;
+}
+.header .wrapper .top_navbar .logo img {
+  float: left;
+  margin-left: -20px;
+  margin-top: 45px;
+}
+.header .wrapper .top_navbar .rightside ul {
+  display: flex;
+}
+.header .wrapper .top_navbar .rightside ul li {
+  margin: 0 50px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.4s;
+  color: white;
+}
+
+.header .wrapper .top_navbar .rightside ul li:hover {
+  border-bottom: 1px solid #d00d2d;
+}
+
+.header .wrapper .top_navbar .rightside ul li:last-child {
+  background-color: #d00d2d;
+  margin-right: 100px;
+  border: 1px #ffffff solid;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 0.7em;
+}
+
+.header .wrapper .top_navbar .rightside ul li a {
+  display: block;
+  padding: 4px 8px;
+}
+
+.header .wrapper .top_navbar .rightside ul li a:hover:last-child {
+  color: #eb3956;
+}
+
+.header .wrapper .bottom_navbar .leftside {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 600px;
+  font-size: 0.9em;
+  font-weight: bolder;
+}
+.header .wrapper .bottom_navbar .leftside ul {
+  display: flex;
+  padding-right: 800px;
+  justify-content: space-between;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li {
+  color: white;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover {
+  border-bottom: 1px solid #d00d2d;
+  color: #d00d2d;
+}
+
+/* The sub menus */
+.header .wrapper .bottom_navbar .leftside .sub_menu {
+  display: none;
+  z-index: 1;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu {
+  position: absolute;
+  display: inline-block;
+  background-color: #002e6d;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul {
+  display: block;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li a {
+  display: block;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li {
+  border-bottom: 1px solid #ffffff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px;
+  text-align: left;
+}
+
+.header
+  .wrapper
+  .bottom_navbar
+  .leftside
+  ul
+  li:hover
+  .sub_menu
+  ul
+  li:last-child {
+  border-bottom: none;
+}
+
+.header .wrapper .bottom_navbar .leftside ul li:hover .sub_menu ul li a:hover {
+  color: #d00d2d;
+}
+
+#proof {
+margin-left: 600px;
+margin-right: 50px;	
+margin-top: 50px;
+}
+
+#future {
+position: absolute;
+top: 2250px;
+left: 50px;
+margin-top: 30px;	
+}
+
+#footer1 {
+position: absolute;
+top: 2650px;
+left: 0px;
+height: 375px;
+width: 1600px;
+background-color: white;
+}
+
+#footer2 {
+position: absolute;
+left: 0px;
+top: 3025px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+#footer1A, #footer3A, #footer5A, #footer7A, #footer9A, #footer11A, #footer13A, #footer15A, #footer17A {
+margin-left: 20px;
+margin-right: 900px;
+margin-top: 50px;
+}
+
+#footer1A p, #footer3A p, #footer5A p, #footer7A p, #footer9A p, #footer11A p, #footer13A p, #footer15A p, #footer17A p{
+font-size: 17px;
+}
+
+#footer1A h3, #footer3A h3, #footer5A h3, #footer7A h3, #footer9A h3, #footer11A h3, #footer13A h3, #footer15A h3, #footer17A h3{
+margin-left: 50px;
+}
+
+#footer1B, #footer3B, #footer5B, #footer7B, #footer9B, #footer11B, #footer13B, #footer15B, #footer17B {
+position: relative;
+bottom: 155px;
+margin-left: 800px;
+font-weight: bold;
+}
+
+#footer1B a, #footer3B a, #footer5B a, #footer7B a, #footer9B a, #footer11B a, #footer13B a, #footer15B a, #footer17B a {
+color: black;
+text-decoration: none;
+}
+
+#footer1C, #footer3C, #footer5C, #footer7C, #footer9C, #footer11C, #footer13C, #footer15C, #footer17C {
+position: relative;
+bottom: 390px;
+margin-left: 1050px;
+font-weight: bold;
+}
+
+#rights {
+margin-left: 50px;
+}
+
+#rights a {
+font-size: 20px;
+}
+
+.container6 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 250px;
+width: 1600px;
+background-color: white;
+}
+
+.container6 h1{
+margin-left: 510px;
+margin-top: 50px;
+}
+
+.container6 p {
+font-weight: bold;
+font-size: 30px;
+margin-left: 380px;
+}
+
+.container7 {
+position: absolute;
+top: 350px;
+left: 0px;
+height: 350px;
+width: 1600px;
+}
+
+.container7 p {
+margin-top: 140px;
+margin-right: 200px;
+margin-left: 600px;
+}
+
+#Entrepreneurs {
+position: relative;
+bottom: 190px;
+margin-left: 50px;
+}
+
+#special {
+position: absolute;
+top: 700px;
+left: 550px;
+color: #002e6d;
+margin-top: 15px;	
+}
+
+.container8 {
+position: absolute;
+top: 800px;
+left: 0px;
+height: 700px;
+width: 800px;
+}
+
+#ALU-advantage {
+margin-left: 100px;
+}
+
+.container9 {
+position: absolute;
+top: 850px;
+left: 700px;
+height: 800px;
+width: 800px;
+}
+
+/* The 'cursor' property changes the mouse icon from an arrow to a pointer.' */
+/* "outline: none" removes the blue outline that appears after pressing the button. */
+/* The transition property enables the button's font-size and box-shadow to increase by 5px and 3px, respectively, in 0.5 seconds when hovering over it. */
+/* References: https://www.youtube.com/watch?v=o92sjDF-A3E&ab_channel=TECHNOLOGYFAQ, https://www.w3schools.com/css/css3_transitions.asp */
+.btn {
+cursor: pointer;
+margin-left: 50px;
+background-color: #002e6d;
+padding: 10px 15px;
+font-size: 20px;
+color: white;
+outline: none;
+border-radius: 10px 10px 10px 10px;
+text-decoration: none;
+transition: font-size 0.5s, box-shadow 0.5s;
+box-shadow: 3px 3px 0px gray;
+}
+
+#bt {
+margin-top: 50px;
+}
+
+.btn:hover {
+font-size: 25px;
+box-shadow: 5px 5px 0px gray;	
+}
+
+.container10 {
+position: absolute;
+top: 1400px;
+left: 0px;
+height: 650px;
+width: 1600px;
+background-image: url("top-view-campus.jpg");
+color: white;
+overflow: hidden;	
+}
+#info {
+position: absolute;
+top: 176px;
+left: 700px;
+height: 400px;
+background-color: white;
+color: black;
+margin-left: 60px;
+margin-right: 80px;
+}
+
+#intro {
+margin-left: 400px;
+}
+
+#intro p {
+margin-left: 120px;
+}
+
+.container10 h2{
+margin-left: 180px;
+}
+
+.slider-text2 h3, .slider-text4 h3, .slider-text5 h3 {
+margin-left: 150px;
+}
+
+.container10 h3 {
+font-size: 30px;
+color: #002e6d;
+}
+
+.container10 p{
+margin-left: 50px;
+margin-right: 30px;
+}
+
+.slider-show{
+font-size: 30px;
+color: white;
+}
+
+.slider-text1 h3, .slider-text3 h3 {
+margin-left: 100px;
+margin-right: 50px;
+}
+
+/* This indicates that no slider is shown by default at the beginning. */
+.slider {
+display: none;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 55%;
+width: auto;
+margin-top: -10px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 30px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
+right: 10px;
+}
+
+.prev:hover, .next:hover {
+background-color: gray;
+font-size: 40px;
+}
+
+#img1, #img2, #img3, #img4, #img5 {
+margin-left: 70px;
+}
+
+#footer3 {
+position: absolute;
+top: 2050px;
+left: 0px;
+height: 375px;
+width: 1600px;
+background-color: white;
+}
+
+#footer4 {
+position: absolute;
+left: 0px;
+top: 2425px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container11 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 250px;
+width: 1600px;
+background-color: white;
+}
+
+.container11 h1{
+margin-left: 450px;
+margin-top: 50px;
+}
+
+.container12 {
+position: absolute;
+top: 300px;
+left: 0px;
+height: 1000px;
+width: 1600px;
+background-image: url("top-view-campus.jpg");
+}
+
+.slider1 {
+position: absolute;
+top: 100px;
+left: 200px;
+height: 750px;
+width: 1200px;
+background-color: white;
+}
+
+.slider1 h2, p {
+margin-left: 50px;
+margin-right: 50px;	
+}
+
+.slider1 h2 {
+color: #002e6d;
+}
+
+#footer5 {
+position: absolute;
+top: 1300px;
+left: 0px;
+height: 365px;
+width: 1600px;
+background-color: white;
+}
+
+#footer6 {
+position: absolute;
+left: 0px;
+top: 1665px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container13 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 190px;
+width: 1600px;
+background-color: white;
+}
+
+.container13 h1{
+margin-left: 610px;
+margin-top: 55px;
+}
+
+.container14 {
+position: absolute;
+top: 325px;
+left: 0px;
+height: 450px;
+width: 1600px;
+}
+
+.container14 p {
+margin-top: 35px;
+}
+
+.container15 {
+position: absolute;
+top: 800px;
+left: 0px;
+height: 850px;
+width: 1600px;
+color: white;
+background-image: url("top-view-campus.jpg");
+}
+
+.container15a {
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.container15b, .container15e {
+margin-left: 650px;
+margin-top: -318px;
+}
+
+.container15c, .container15f {
+margin-left: 1200px;
+margin-top: -318px;
+}
+
+.container15d {
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.container15a p,.container15b p {
+margin-left: 70px;
+}
+
+.container15c p {
+margin-left: 95px;
+}
+
+.container15d p {
+margin-left: 25px;
+}
+
+.container15e p {
+margin-left: 5px;
+}
+
+.container15f p {
+margin-left: 110px;
+}
+
+/* References: https://www.codegrepper.com/code-examples/css/how+to+increase+the+size+of+an+image+when+you+hover+over+css */
+.container15 img:hover {
+width: 350px;
+height: 300px;
+transition: width 0.5s, height 0.5s;
+}
+
+#footer7 {
+position: absolute;
+top: 1630px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer8 {
+position: absolute;
+left: 0px;
+top: 1985px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container16 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 180px;
+width: 1600px;
+background-color: white;
+}
+
+.container16 h1 {
+margin-left: 550px;
+margin-top: 55px;
+}
+
+.container17 {
+position: absolute;
+top: 300px;
+left: 0px;
+height: 150px;
+width: 1600px;
+}
+
+.container17 p {
+margin-top: 45px;
+}
+
+.container18 {
+position: absolute;
+top: 450px;
+left: 0px;
+height: 600px;
+width: 1600px;
+background-image: url("top-view-campus.jpg");
+}
+
+.slider2 {
+position: absolute;
+top: 80px;
+left: 200px;
+height: 420px;
+width: 1200px;
+background-color: white;
+}
+
+.slider2 h2, p {
+margin-left: 50px;
+margin-right: 50px;	
+}
+
+.slider2 h2 {
+color: #002e6d;
+}
+
+.prev_1, .next_1 {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+margin-top: -10px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 30px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next_1 {
+right: 10px;
+}
+
+.prev_1:hover, .next_1:hover {
+background-color: gray;
+font-size: 40px;
+}
+
+#footer9 {
+position: absolute;
+top: 1050px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer10 {
+position: absolute;
+left: 0px;
+top: 1405px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container19 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 180px;
+width: 1600px;
+background-color: white;
+}
+
+.container19 h1{
+margin-left: 500px;
+margin-top: 55px;
+}
+
+.container20 {
+position: absolute;
+top: 300px;
+left: 0px;
+height: 1500px;
+width: 1600px;
+}
+
+#alu-learning-model {
+margin-left: 270px;
+margin-top: 20px;	
+}
+
+.container21 {
+position: absolute;
+top: 1300px;
+left: 450px;
+height: 400px;
+width: 700px;
+background-color: #002e6d;
+color: white;
+}
+
+.slider3-text1 h2, .slider3-text2 h2 {
+margin-left: 230px;
+}
+
+.slider3-text3 h2{
+margin-left: 160px;
+}
+
+.slider3-text4 h2{
+margin-left: 50px;
+}
+
+.prev_2, .next_2 {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+margin-top: -10px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 30px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+color: black;
+}
+
+.next_2 {
+right: -100px;
+}
+
+.prev_2 {
+left: -100px;
+}
+
+.prev_2:hover, .next_2:hover {
+background-color: black;
+color: white;
+font-size: 40px;
+}
+
+.slider3 {
+display: none;
+}
+
+#footer11 {
+position: absolute;
+top: 1800px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer12 {
+position: absolute;
+left: 0px;
+top: 2155px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container22 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 250px;
+width: 1600px;
+background-color: white;
+}
+
+.container22 h1{
+margin-left: 400px;
+margin-top: 65px;
+}
+
+#logo_1 {
+margin-top: -140px;
+}
+
+.container23 {
+position: absolute;
+top: 300px;
+left: 0px;
+height: 1500px;
+width: 1600px;
+}
+
+#gcu {
+margin-left: 200px;
+margin-top: 85px;
+}
+
+.container23 p {
+margin-left: 100px;
+margin-right: 100px;
+}
+
+#footer13 {
+position: absolute;
+top: 1800px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer14 {
+position: absolute;
+left: 0px;
+top: 2155px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container24 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 250px;
+width: 1600px;
+background-color: white;
+}
+
+.container24 h1{
+margin-left: 500px;
+margin-top: 55px;
+}
+
+.container24 p{
+margin-left: 580px;
+margin-top: -15px;
+}
+
+.container25 {
+position: absolute;
+top: 320px;
+left: 0px;
+height: 1100px;
+width: 1600px;
+overflow: hidden;
+background-image: url("top-view-campus.jpg");
+}
+
+.tab {
+float: left;
+border: none;
+width: 100%;
+height: 80px;
+background-color: white;
+}
+
+.tab button {
+background-color: white;
+color: black;
+padding: 23px 16px;
+width: 100%;
+border: none;
+outline: none;
+text-align: left;
+cursor: pointer;
+font-size: 30px;
+}
+
+.tab button.active {
+background-color: #002e6d;
+color: white;
+}
+
+#link1 {
+position: absolute;
+left: 10px;
+}
+
+#link2 {
+position: absolute;
+left: 400px;
+}
+
+#link3 {
+position: absolute;
+left: 800px;
+}
+
+#link4 {
+position: absolute;
+left: 1200px;
+}
+
+.tabcontent {
+display: none;
+margin-top: 150px;
+color: white;
+}
+
+.tabcontent img {
+margin-left: 500px;
+}
+
+.tabcontent h2 {
+margin-left: 520px;
+text-transform: uppercase;
+}
+
+#Donald-Kaberuka h2 {
+margin-left: 300px;
+}
+
+#Geoffrey-Rugege h2 {
+margin-left: 480px;
+}
+
+.tabcontent p {
+margin-left: 80px;
+margin-right: 100px;
+}
+
+#footer15 {
+position: absolute;
+top: 1400px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer16 {
+position: absolute;
+left: 0px;
+top: 1755px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.container26 {
+position: absolute;
+top: 135px;
+left: 0px;
+height: 260px;
+width: 1600px;
+background-color: white;
+}
+
+.container26 h1{
+margin-left: 600px;
+margin-top: 45px;
+}
+
+.container26 p{
+margin-left: 590px;
+margin-top: -15px;
+}
+
+.container27 {
+position: absolute;
+top: 300px;
+left: 0px;
+height: 800px;
+width: 1600px;
+overflow: hidden;
+background-image: url("top-view-campus.jpg");
+background-color: #002b5c;
+}
+
+.tab_content {
+display: none;
+margin-top: 200px;
+margin-left: 100px;
+background-color: white;
+height: 450px;
+font-size: 25px;
+width: 700px;
+}
+
+.tab_content iframe {
+position: absolute;
+top: 200px;
+left: 850px;
+}
+
+#footer17 {
+position: absolute;
+top: 1100px;
+left: 0px;
+height: 355px;
+width: 1600px;
+background-color: white;
+}
+
+#footer18 {
+position: absolute;
+left: 0px;
+top: 1455px;
+width: 100%;
+height: 50px;
+background-color: #002b5c;
+color: white;
+}
+
+.fa {
+position: relative;
+left: 900px;
+color: white;
+text-decoration: none;
+width: 50px;
+}
+
+.fa:hover {
+color: red;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #002e6d;
+  color: #f1d302;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 60px;
+  right: 28px;
+  width: 280px;
+  outline: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.open-button:hover {
+  font-size: 20px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #020300;
+  margin: 0;
+  color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #0F0F0F;
+  resize: none;
+  min-height: 200px;
+  color: #dee5e5;
+}
+/* specifies the height of the email textarea */
+.form-container textarea#email-area {
+  min-height: 50px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #1E1E1E;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #642ca9;
+  color: white;
+  padding: 7px 7px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  outline: none;
+  margin-left: 100px
+}
+
+/* Add background color to the cancel button and color to the text */
+.form-container .cancel {
+  background-color: #1E1E1E;
+  color: #dee5e5;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

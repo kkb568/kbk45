@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library. -->
+    <!-- Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+	<title>Authors - ALU</title>
+    <link rel="stylesheet" href="test.css">
+    <!-- jQuery resources -->
+    <link rel="icon" href="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_32,h_32/https://www.alueducation.com/wp-content/uploads/2019/04/cropped-alu_step_device-2-32x32.png" sizes="32x32">
+	<!-- This creates the logo that is usually beside the title of the web tag. -->
+	<script type="text/javascript">
+    // The function ensures that the name of the person is in line with the respective content when one is hovering over the specified name.
+	function open_Name(evt, Name) {
+	// Declare all variables.
+	var i, tab_content, tab_links;
+	// Get all elements with class="tabcontent" and hide them.
+	tab_content = document.getElementsByClassName("tab_content");
+    for (i = 0; i < tab_content.length; i++) {
+     tab_content[i].style.display = "none";
+    }
+	// Get all elements with class="tablinks" and remove the class "active".
+	tab_links = document.getElementsByClassName("tab_links");
+    for (i = 0; i < tab_links.length; i++) {
+    tab_links[i].className = tab_links[i].className.replace(" active", "");
+    }
+	// Show the current tab, and add an "active" class to the link that opened the tab.
+	document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+   }
+   </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Search.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="top_navbar">
+                <div class="logo">
+                    <img src ="ALU-logo-white-full.png" alt="ALU" width="400" height="80">
+                </div>
+                <!-- The right side of the top navbar -->
+                <div class="rightside">
+                    <ul>
+                        <li><a href="#">Apply</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Work @ ALU</a></li>
+                        <li><a href="#">GIVE TO ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_navbar">
+                <!-- The main menu and drop down menu -->
+                <div class="leftside">
+                    <ul>
+                        <li><a href="#">ABOUT</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Our Approach</a></li>
+                                    <li><a href="#">Learning model</a></li>
+									<li><a href="#">Leadership</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Qm-mpD9-ZyQtTud0rbCnrW6pVa9cuFbS/view">The ALU impact report 2020</a></li>
+									<li><a href="#">Our founding academic partners</a></li>
+                                    <li><a href="#">Authors</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">THE ALU ADVANTAGE</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">The 6 ALU advantages</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">ACADEMICS</a>
+                            <div class="sub_menu">
+                                <ul>
+                                    <li><a href="#">Computing</a></li>
+									<li><a href="#">Advice to Prospective Students</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">LIFE AT ALU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   <div class="w3-sidebar-right" style="display:none" id="mySidebar">
+	<div class="search-box" id="search_box">
+      <input type="text" placeholder=""/>
+	  <input type="button" value="Search" onclick="Search()"/>
+	  <div id="button1">
+	   <button onclick="w3_close()" class="w3-bar-item w3-large">Close</button>
+      </div>
+	</div>
+   </div>
+   <button class="w3-button" onclick="w3_open()">☰</button>
+  </div>
+  <div class="container26">
+   <h1>AUTHORS</h1>
+   <p>(Hover over one of the names).<p>
+  </div>
+  <div class="container27">
+   <div class="tab">
+    <button class="tab_links" id="link1" onmouseover="open_Name(event, 'Anna-Akghibe')">Anna Akhigbe</button>
+    <button class="tab_links" id="link2" onmouseover="open_Name(event, 'Brian-Koome')">Brian Koome</button>
+    <button class="tab_links" id="link3" onmouseover="open_Name(event, 'Philip-Musila')">Philip Musila</button>
+	<button class="tab_links" id="link4" onmouseover="open_Name(event, 'Ryan-Macharika')">Ryan Macharika</button>
+   </div>
+   <div id="Anna-Akghibe" class="tab_content">
+    <br/><ul>
+	 <li>Email address: a.akhigbe@alustudent.com</li><br/>
+	 <li>Home location: Nigeria </li><br/>
+	 <li>Computing interest: Data Analysis.</li><br/>
+	 <li>Contribution to the site: Undergraduate page (design).</li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4035079.6404080517!2d6.42093375276486!3d9.017386083643226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2ske!4v1627040144626!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </div>
+   <div id="Brian-Koome" class="tab_content">
+    <br/><ul>
+	 <li>Email address: b.koome@alustudent.com</li><br/>
+	 <li>Home location: Kenya</li><br/>
+	 <li>Computing interest: Graphics, web dev.</li><br/>
+	 <li>Contribution to the site: Home, About and ALU advantage pages (design). </li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d255282.35853691897!2d36.70731033773482!3d-1.3028617959413002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1613549306623!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   </div>
+   <div id="Philip-Musila" class="tab_content">
+    <br/><ul>
+	 <li>Email address: m.musila@alustudent.com</li><br/>
+	 <li>Home location: Kenya</li><br/>
+	 <li>Computing interest: Artificial Intelligence (AI).</li><br/>
+	 <li>Contribution to the site: Prototype and header design.</li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d255282.35853691897!2d36.70731033773482!3d-1.3028617959413002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1613549306623!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   </div>
+   <div id="Ryan-Macharika" class="tab_content">
+    <br/><ul>
+	 <li>Email address: r.macharika@alustudent.com</li><br/>
+	 <li>Home location: Zimbabwe</li><br/>
+	 <li>Computing interest: </li><br/>
+	 <li>Contribution to the site: Student life and Apply pages (design).</li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863058.545473068!2d26.908671129636907!3d-18.996877906505087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4e706b17161%3A0xa1c0385fc5cbbfee!2sZimbabwe!5e0!3m2!1sen!2ske!4v1627040257263!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </div>
+  </div>
+  <div id="footer17">
+   <div id="footer17A">
+    <h3><u>ABOUT ALU</u></h3>
+	<p>ALU aims to develop 3 million ethical and entrepreneurial leaders for Africa and the world by 2035. It uses a personalized, student-driven, project-based, and mission-oriented approach to create agile, lifelong learners who can adapt to a changing world. ALU's first site was inaugurated in September 2015 in Mauritius. Its second campus was inaugurated in September 2017 in Kigali Heights, Rwanda.</p>
+   </div>
+   <div id="footer17B">
+	 <u>HELPFUL LINKS</u><br/><br/>
+	 <!-- The <u>...</u> tags are used to make the text underlined. (Reference: https://www.w3schools.com/tags/tag_u.asp) -->
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/index.html">Home</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/About.html">About us</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/ALU%20Advantage.html">ALU Advantage</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/UndergraduateExperience.html">Academics</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/Student%20life.html">Life at ALU</a><br/><br/>
+	 <a href="file:///C:/Users/brian/Desktop/test/GitHub/IP1.github.io/apply_page.html">Apply</a>
+   </div>
+   <div id="footer17C">
+    <u>CONTACT US</u><br/><br/>
+	African Leadership Campus,<br/><br/>
+    Powder Mill Rd,<br/><br/>
+    Pamplemousses, 21001<br/><br/>
+    Mauritius<br/><br/>
+	marketing@alueducation.com<br/><br/>
+	Front desk: +230 54 43 49 51
+   </div>
+  </div>
+  <div id="footer18">
+   <br/>
+   <div id="rights">
+    © 2021 ALU. All Rights Reserved.
+	<!--The 'a' attributes create the social media icons with links to their respective social media. -->
+	<a href="https://facebook.com/alu.education" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/alueducation" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/alueducation/" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w" class="fa fa-youtube"></a>
+	<a href="https://www.linkedin.com/school/alueducation/" class="fa fa-linkedin"></a>
+   </div>
+  </div>
+ </body>
+</html>
